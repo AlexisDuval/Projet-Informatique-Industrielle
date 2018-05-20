@@ -9,8 +9,9 @@
 int main()
 {
 
+   // Structure 
+   
    struct sockaddr_un server, client;
-
 
    /* création de la socket */ 
     
