@@ -12,12 +12,26 @@ int main()
    // Structure 
    struct sockaddr_un server, client;
 
+    server.sin_family = AF_INET;
+    server.sin_port = htons(8888);
+    server.sin_addr.s_addr = htonl(INADDR_ANY);
+
    /* création de la socket */ 
     
    int sock 
    sock = socket(AF_INET, SOCK_DGRAM,0);
    CHECK(sock, "Erreur à l'initialisation de la socket");
    
-   CHECK(bind(sock,(struct sockaddr *) &server,))
+   // bind
+   CHECK(bind(sock,(struct sockaddr *) &server,),sizeof(server);
+
+   while(1){
+
+
+       
+   }
+
+
+
 
 }
